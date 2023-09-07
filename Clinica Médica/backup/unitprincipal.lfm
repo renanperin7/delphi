@@ -1,0 +1,8 @@
+object Form1: TForm1
+  Left = 763
+  Height = 754
+  Top = 162
+  Width = 939
+  Caption = 'Sistema Clínica Médica'
+  LCLVersion = '2.2.6.0'
+end

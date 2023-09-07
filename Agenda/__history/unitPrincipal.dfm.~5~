@@ -1,0 +1,42 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Agenda de Contatos'
+  ClientHeight = 442
+  ClientWidth = 628
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Label1: TLabel
+    Left = 8
+    Top = 8
+    Width = 232
+    Height = 32
+    Caption = 'Agenda de Contatos'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 104
+    Width = 94
+    Height = 15
+    Caption = 'Nome do contato'
+  end
+  object DBEdit1: TDBEdit
+    Left = 8
+    Top = 136
+    Width = 289
+    Height = 23
+    DataSource = DM.dsContatos
+    TabOrder = 0
+  end
+end

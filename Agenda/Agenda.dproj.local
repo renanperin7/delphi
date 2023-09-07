@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/09/06 00:08:48.994,=C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/06 00:09:07.402,C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\unitPrincipal.pas=C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/06 00:09:07.402,C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\unitPrincipal.dfm=C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/09/06 00:09:15.048,C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\Agenda.dproj=C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/09/06 00:11:08.574,=C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/06 00:12:04.233,C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\unitDM.pas=C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/06 00:12:04.233,C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\unitDM.dfm=C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

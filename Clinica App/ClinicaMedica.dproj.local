@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/09/07 23:39:49.436,=C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/07 23:40:10.854,C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\unitPrincipal.dfm=C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/09/07 23:40:10.854,C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\unitPrincipal.pas=C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/07 23:40:20.527,C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\ClinicaMedica.dproj=C:\Users\renan\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/09/07 23:48:08.289,=C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\Unit2.pas</Transaction>
+    <Transaction>2023/09/07 23:49:36.467,C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\unitCadPacientes.pas=C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\Unit2.pas</Transaction>
+    <Transaction>2023/09/07 23:49:36.467,C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\unitCadPacientes.dfm=C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\Unit2.dfm</Transaction>
+    <Transaction>2023/09/07 23:49:56.568,=C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\Unit3.pas</Transaction>
+    <Transaction>2023/09/07 23:50:05.210,C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\unitCadAgendamentos.pas=C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\Unit3.pas</Transaction>
+    <Transaction>2023/09/07 23:50:05.210,C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\unitCadAgendamentos.dfm=C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\Unit3.dfm</Transaction>
+    <Transaction>2023/09/07 23:52:33.475,=C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\Unit1.pas</Transaction>
+    <Transaction>2023/09/07 23:52:41.111,C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\unitDM.dfm=C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\Unit1.dfm</Transaction>
+    <Transaction>2023/09/07 23:52:41.111,C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\unitDM.pas=C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica App\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,40 @@
+object DM: TDM
+  Height = 480
+  Width = 640
+  object Conexao: TFDConnection
+    Params.Strings = (
+      'Database=clinica_medica'
+      'User_Name=root'
+      'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 56
+    Top = 96
+  end
+  object dsPacientes: TDataSource
+    Left = 208
+    Top = 192
+  end
+  object dsAgendamentos: TDataSource
+    Left = 312
+    Top = 192
+  end
+  object tbPacientes: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = Conexao
+    ResourceOptions.AssignedValues = [rvEscapeExpand]
+    TableName = 'clinica_medica.paciente'
+    Left = 208
+    Top = 112
+  end
+  object tbAgendamentos: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = Conexao
+    ResourceOptions.AssignedValues = [rvEscapeExpand]
+    TableName = 'clinica_medica.agendamento'
+    Left = 312
+    Top = 112
+  end
+end

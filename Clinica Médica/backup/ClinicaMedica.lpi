@@ -26,6 +26,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+      <Item>
         <PackageName Value="LCL"/>
       </Item>
     </RequiredPackages>
@@ -35,10 +38,36 @@
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="unit1.pas"/>
+        <Filename Value="unitprincipal.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="formPrincipal"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <UnitName Value="unitPrincipal"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitcadpaciente.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="formCadPacientes"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="unitCadPaciente"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitcadagendamentos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="formCadAgendamentos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="unitCadAgendamentos"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitdm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="unitDM"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -53,6 +82,9 @@
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
       <Options>
         <Win32>
           <GraphicApplication Value="True"/>

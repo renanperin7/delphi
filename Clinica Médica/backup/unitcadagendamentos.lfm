@@ -1,0 +1,10 @@
+object formCadAgendamentos: TformCadAgendamentos
+  Left = 697
+  Height = 240
+  Top = 224
+  Width = 320
+  BorderIcons = [biSystemMenu]
+  Caption = 'Cadastro de Agendamentos'
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+end

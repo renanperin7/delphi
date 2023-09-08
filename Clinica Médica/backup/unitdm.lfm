@@ -1,0 +1,138 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 410
+  HorizontalOffset = 576
+  VerticalOffset = 348
+  Width = 717
+  object tbPaciente: TCSVDataset
+    FieldDefs = <>
+    CSVOptions.FirstLineAsFieldNames = False
+    CSVOptions.DefaultFieldLength = 255
+    CSVOptions.Delimiter = ','
+    CSVOptions.QuoteChar = '"'
+    CSVOptions.LineEnding = #13#10
+    CSVOptions.IgnoreOuterWhitespace = False
+    CSVOptions.QuoteOuterWhitespace = True
+    Left = 116
+    Top = 84
+    object tbPacientenome: TStringField
+      FieldKind = fkData
+      FieldName = 'nome'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 80
+    end
+    object tbPacientecelular: TStringField
+      FieldKind = fkData
+      FieldName = 'celular'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 16
+    end
+    object tbPacientedata_cadastro: TDateField
+      FieldKind = fkData
+      FieldName = 'data_cadastro'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object tbPacientecpf: TStringField
+      FieldKind = fkData
+      FieldName = 'cpf'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 14
+    end
+    object tbPacienteid: TAutoIncField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dsPaciente: TDataSource
+    DataSet = tbPaciente
+    Left = 116
+    Top = 152
+  end
+  object tbAgendamentos: TCSVDataset
+    FileName = 'C:\Users\renan\OneDrive\Área de Trabalho\gitport\delphi\Clinica Médica\agendamentos.txt'
+    FieldDefs = <>
+    CSVOptions.FirstLineAsFieldNames = False
+    CSVOptions.DefaultFieldLength = 255
+    CSVOptions.Delimiter = ','
+    CSVOptions.QuoteChar = '"'
+    CSVOptions.LineEnding = #13#10
+    CSVOptions.IgnoreOuterWhitespace = False
+    CSVOptions.QuoteOuterWhitespace = True
+    Left = 200
+    Top = 84
+    object tbAgendamentosdata: TDateField
+      FieldKind = fkData
+      FieldName = 'data'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object tbAgendamentoshora: TStringField
+      FieldKind = fkData
+      FieldName = 'hora'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 8
+    end
+    object tbAgendamentosespecialidade: TStringField
+      FieldKind = fkData
+      FieldName = 'especialidade'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 25
+    end
+    object tbAgendamentosmedico: TStringField
+      FieldKind = fkData
+      FieldName = 'medico'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 30
+    end
+    object tbAgendamentosid: TAutoIncField
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dsAgendamentos: TDataSource
+    DataSet = tbAgendamentos
+    Left = 200
+    Top = 152
+  end
+end

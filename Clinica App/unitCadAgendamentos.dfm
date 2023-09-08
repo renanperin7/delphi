@@ -63,7 +63,6 @@ object FormCadAgendamentos: TFormCadAgendamentos
     Color = clRed
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 637
     object Label1: TLabel
       Left = 24
       Top = 24
@@ -85,6 +84,7 @@ object FormCadAgendamentos: TFormCadAgendamentos
     Top = 165
     Width = 33
     Height = 23
+    AutoSelect = False
     DataField = 'id'
     DataSource = DM.dsAgendamentos
     ReadOnly = True

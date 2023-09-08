@@ -91,6 +91,7 @@ object FormCadPacientes: TFormCadPacientes
     Top = 173
     Width = 121
     Height = 23
+    AutoSelect = False
     DataField = 'id'
     DataSource = DM.dsPacientes
     ReadOnly = True

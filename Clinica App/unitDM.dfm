@@ -17,6 +17,7 @@ object DM: TDM
     Top = 192
   end
   object dsAgendamentos: TDataSource
+    DataSet = tbAgendamentos
     Left = 312
     Top = 192
   end
@@ -33,6 +34,7 @@ object DM: TDM
       Alignment = taLeftJustify
       FieldName = 'id'
       Origin = 'id'
+      ReadOnly = True
     end
     object tbPacientesnome: TStringField
       FieldName = 'nome'
@@ -69,10 +71,13 @@ object DM: TDM
     Left = 312
     Top = 96
     object tbAgendamentosid: TFDAutoIncField
+      Alignment = taLeftJustify
       FieldName = 'id'
       Origin = 'id'
+      ReadOnly = True
     end
     object tbAgendamentosid_paciente: TIntegerField
+      Alignment = taLeftJustify
       FieldName = 'id_paciente'
       Origin = 'id_paciente'
       Required = True
@@ -81,11 +86,13 @@ object DM: TDM
       FieldName = 'data'
       Origin = 'data'
       Required = True
+      EditMask = '##/##/####;1;_'
     end
     object tbAgendamentoshora: TStringField
       FieldName = 'hora'
       Origin = 'hora'
       Required = True
+      EditMask = '##:##;1;_'
       Size = 8
     end
     object tbAgendamentosespecialidade: TStringField

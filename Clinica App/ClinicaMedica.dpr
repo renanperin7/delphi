@@ -2,9 +2,9 @@ program ClinicaMedica;
 
 uses
   Vcl.Forms,
-  unitPrincipal in 'unitPrincipal.pas' {Form1},
-  unitCadPacientes in 'unitCadPacientes.pas' {Form2},
-  unitCadAgendamentos in 'unitCadAgendamentos.pas' {Form3},
+  unitPrincipal in 'unitPrincipal.pas' {FormPrincipal},
+  unitCadPacientes in 'unitCadPacientes.pas' {FormCadPacientes},
+  unitCadAgendamentos in 'unitCadAgendamentos.pas' {FormCadAgendamentos},
   unitDM in 'unitDM.pas' {DM: TDataModule};
 
 {$R *.res}
@@ -12,9 +12,9 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
-  Application.CreateForm(TForm2, Form2);
-  Application.CreateForm(TForm3, Form3);
+  Application.CreateForm(TFormPrincipal, FormPrincipal);
+  Application.CreateForm(TFormCadPacientes, FormCadPacientes);
+  Application.CreateForm(TFormCadAgendamentos, FormCadAgendamentos);
   Application.CreateForm(TDM, DM);
   Application.Run;
 end.

@@ -1,90 +1,94 @@
-object Form2: TForm2
+object FormCadPacientes: TFormCadPacientes
   Left = 0
   Top = 0
   Caption = 'Cadastro de Pacientes'
   ClientHeight = 442
-  ClientWidth = 628
-  Color = clBtnFace
+  ClientWidth = 641
+  Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poScreenCenter
   TextHeight = 15
   object Label2: TLabel
-    Left = 8
-    Top = 112
+    Left = 24
+    Top = 152
     Width = 11
     Height = 15
     Caption = 'ID'
   end
   object Label3: TLabel
-    Left = 160
-    Top = 112
+    Left = 176
+    Top = 152
     Width = 21
     Height = 15
     Caption = 'CPF'
   end
   object Label4: TLabel
-    Left = 8
-    Top = 176
+    Left = 24
+    Top = 216
     Width = 89
     Height = 15
     Caption = 'Nome Completo'
   end
   object Label5: TLabel
-    Left = 8
-    Top = 232
+    Left = 24
+    Top = 280
     Width = 37
     Height = 15
     Caption = 'Celular'
   end
   object Label6: TLabel
-    Left = 160
-    Top = 232
+    Left = 176
+    Top = 280
     Width = 90
     Height = 15
     Caption = 'Data de Cadastro'
   end
   object Label7: TLabel
-    Left = 336
-    Top = 112
+    Left = 349
+    Top = 107
     Width = 50
     Height = 15
     Caption = 'Pesquisar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
   end
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 628
+    Width = 641
     Height = 89
     Align = alTop
+    Color = clRed
+    ParentBackground = False
     TabOrder = 0
+    ExplicitWidth = 637
     object Label1: TLabel
-      Left = 0
-      Top = 13
-      Width = 327
-      Height = 45
+      Left = 24
+      Top = 24
+      Width = 282
+      Height = 37
       Caption = 'Cadastro de Pacientes'
+      Color = clWhite
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -32
+      Font.Color = clWhite
+      Font.Height = -27
       Font.Name = 'Segoe UI'
       Font.Style = [fsBold]
+      ParentColor = False
       ParentFont = False
-    end
-    object DBNavigator1: TDBNavigator
-      Left = 336
-      Top = 24
-      Width = 270
-      Height = 25
-      DataSource = DM.dsPacientes
-      TabOrder = 0
     end
   end
   object DBEdit1: TDBEdit
-    Left = 8
-    Top = 133
+    Left = 24
+    Top = 173
     Width = 121
     Height = 23
     DataField = 'id'
@@ -93,9 +97,9 @@ object Form2: TForm2
     TabOrder = 1
   end
   object DBEdit2: TDBEdit
-    Left = 160
-    Top = 133
-    Width = 113
+    Left = 176
+    Top = 173
+    Width = 121
     Height = 23
     DataField = 'cpf'
     DataSource = DM.dsPacientes
@@ -103,8 +107,8 @@ object Form2: TForm2
     TabOrder = 2
   end
   object DBEdit3: TDBEdit
-    Left = 8
-    Top = 197
+    Left = 24
+    Top = 237
     Width = 273
     Height = 23
     DataField = 'nome'
@@ -112,8 +116,8 @@ object Form2: TForm2
     TabOrder = 3
   end
   object DBEdit4: TDBEdit
-    Left = 8
-    Top = 253
+    Left = 24
+    Top = 301
     Width = 121
     Height = 23
     DataField = 'celular'
@@ -122,8 +126,8 @@ object Form2: TForm2
     TabOrder = 4
   end
   object DBEdit5: TDBEdit
-    Left = 160
-    Top = 253
+    Left = 176
+    Top = 301
     Width = 121
     Height = 23
     DataField = 'data_cadastro'
@@ -132,15 +136,15 @@ object Form2: TForm2
     TabOrder = 5
   end
   object txtBusca: TEdit
-    Left = 336
-    Top = 133
+    Left = 349
+    Top = 128
     Width = 273
     Height = 23
     TabOrder = 6
     OnChange = txtBuscaChange
   end
   object DBGrid1: TDBGrid
-    Left = 336
+    Left = 349
     Top = 162
     Width = 273
     Height = 263
@@ -158,5 +162,40 @@ object Form2: TForm2
         Title.Caption = 'Pessoas Cadastradas'
         Visible = True
       end>
+  end
+  object Button1: TButton
+    Left = 469
+    Top = 24
+    Width = 153
+    Height = 25
+    Caption = 'Ir para Agendamentos'
+    TabOrder = 8
+  end
+  object Button2: TButton
+    Left = 24
+    Top = 102
+    Width = 121
+    Height = 27
+    Caption = 'Inserir Novo'
+    TabOrder = 9
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 24
+    Top = 343
+    Width = 73
+    Height = 25
+    Caption = 'Salvar'
+    TabOrder = 10
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 224
+    Top = 343
+    Width = 73
+    Height = 25
+    Caption = 'Cancelar'
+    TabOrder = 11
+    OnClick = Button4Click
   end
 end

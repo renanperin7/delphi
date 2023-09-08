@@ -99,15 +99,15 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="unitPrincipal.pas">
-            <Form>Form1</Form>
+            <Form>FormPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="unitCadPacientes.pas">
-            <Form>Form2</Form>
+            <Form>FormCadPacientes</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="unitCadAgendamentos.pas">
-            <Form>Form3</Form>
+            <Form>FormCadAgendamentos</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="unitDM.pas">

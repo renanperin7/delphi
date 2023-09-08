@@ -8,7 +8,7 @@ uses
   Vcl.StdCtrls, Vcl.Buttons, Vcl.Menus;
 
 type
-  TForm1 = class(TForm)
+  TFormPrincipal = class(TForm)
     MainMenu1: TMainMenu;
     Sistema1: TMenuItem;
     Sair1: TMenuItem;
@@ -31,35 +31,36 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FormPrincipal: TFormPrincipal;
 
 implementation
 
 {$R *.dfm}
 uses
-  unitCadPacientes, unitCadAgendamentos;
+  unitCadPacientes, unitCadAgendamentos, unitDM;
 
-procedure TForm1.Agendamentos1Click(Sender: TObject);
+procedure TFormPrincipal.Agendamentos1Click(Sender: TObject);
 begin
-  Form3.ShowModal;
+  FormCadAgendamentos.ShowModal;
 end;
 
-procedure TForm1.BitBtn1Click(Sender: TObject);
+procedure TFormPrincipal.BitBtn1Click(Sender: TObject);
 begin
-  Form2.ShowModal;
+  FormCadPacientes.ShowModal;
 end;
 
-procedure TForm1.BitBtn2Click(Sender: TObject);
+procedure TFormPrincipal.BitBtn2Click(Sender: TObject);
 begin
-  Form3.ShowModal;
+  FormCadAgendamentos.ShowModal;
 end;
 
-procedure TForm1.Pacientes1Click(Sender: TObject);
+procedure TFormPrincipal.Pacientes1Click(Sender: TObject);
 begin
-  Form2.ShowModal;
+  FormCadPacientes.ShowModal;
+
 end;
 
-procedure TForm1.Sair1Click(Sender: TObject);
+procedure TFormPrincipal.Sair1Click(Sender: TObject);
 begin
    Application.Terminate;
 end;

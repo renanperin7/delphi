@@ -4,10 +4,33 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.DBCtrls, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Mask, Data.DB, Vcl.Grids, Vcl.DBGrids;
 
 type
-  TForm3 = class(TForm)
+  TFormCadAgendamentos = class(TForm)
+    Panel1: TPanel;
+    Label3: TLabel;
+    Label4: TLabel;
+    DBEdit1: TDBEdit;
+    DBLookupComboBox1: TDBLookupComboBox;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Label5: TLabel;
+    DBEdit3: TDBEdit;
+    Label6: TLabel;
+    DBComboBox1: TDBComboBox;
+    Label7: TLabel;
+    DBEdit4: TDBEdit;
+    DBGrid1: TDBGrid;
+    Button1: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button2: TButton;
+    Label1: TLabel;
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -15,10 +38,28 @@ type
   end;
 
 var
-  Form3: TForm3;
+  FormCadAgendamentos: TFormCadAgendamentos;
 
 implementation
 
 {$R *.dfm}
+
+uses unitDM, unitCadPacientes;
+
+
+procedure TFormCadAgendamentos.Button2Click(Sender: TObject);
+begin
+  DM.tbAgendamentos.Insert;
+end;
+
+procedure TFormCadAgendamentos.Button3Click(Sender: TObject);
+begin
+  DM.tbAgendamentos.Append;
+end;
+
+procedure TFormCadAgendamentos.Button4Click(Sender: TObject);
+begin
+  DM.tbAgendamentos.Cancel;
+end;
 
 end.

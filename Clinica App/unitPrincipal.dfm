@@ -1,9 +1,9 @@
-object Form1: TForm1
+object FormPrincipal: TFormPrincipal
   Left = 0
   Top = 0
   Caption = 'Clinica M'#233'dica'
-  ClientHeight = 737
-  ClientWidth = 1124
+  ClientHeight = 736
+  ClientWidth = 1120
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,8 +16,8 @@ object Form1: TForm1
   object Image1: TImage
     Left = 0
     Top = 129
-    Width = 1124
-    Height = 608
+    Width = 1120
+    Height = 607
     Align = alClient
     Center = True
     Picture.Data = {
@@ -736,13 +736,17 @@ object Form1: TForm1
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000000000000000000001FFD9}
     ExplicitTop = 135
+    ExplicitWidth = 1124
+    ExplicitHeight = 608
   end
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1124
+    Width = 1120
     Height = 129
     Align = alTop
+    Color = clRed
+    ParentBackground = False
     TabOrder = 0
     object BitBtn1: TBitBtn
       Left = 8

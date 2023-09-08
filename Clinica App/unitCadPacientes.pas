@@ -8,9 +8,8 @@ uses
   Vcl.DBCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.Mask;
 
 type
-  TForm2 = class(TForm)
+  TFormCadPacientes = class(TForm)
     Panel1: TPanel;
-    Label1: TLabel;
     Label2: TLabel;
     DBEdit1: TDBEdit;
     Label3: TLabel;
@@ -24,8 +23,15 @@ type
     Label7: TLabel;
     txtBusca: TEdit;
     DBGrid1: TDBGrid;
-    DBNavigator1: TDBNavigator;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Label1: TLabel;
     procedure txtBuscaChange(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,16 +39,30 @@ type
   end;
 
 var
-  Form2: TForm2;
+  FormCadPacientes: TFormCadPacientes;
 
 implementation
 
 {$R *.dfm}
 
-uses unitDM;
+uses unitDM, unitCadAgendamentos;
 
+procedure TFormCadPacientes.Button2Click(Sender: TObject);
+begin
+  DM.tbPacientes.Insert;
+end;
 
-procedure TForm2.txtBuscaChange(Sender: TObject);
+procedure TFormCadPacientes.Button3Click(Sender: TObject);
+begin
+  DM.tbPacientes.Append;
+end;
+
+procedure TFormCadPacientes.Button4Click(Sender: TObject);
+begin
+  DM.tbPacientes.Cancel;
+end;
+
+procedure TFormCadPacientes.txtBuscaChange(Sender: TObject);
 begin
   DM.tbPacientes.Locate('nome', txtBusca.Text, [loCaseInsensitive, loPartialKey]);
 end;

@@ -1,0 +1,202 @@
+inherited FrmMdlCadastros1: TFrmMdlCadastros1
+  Left = 594
+  Height = 453
+  Top = 226
+  ClientHeight = 453
+  Position = poScreenCenter
+  inherited Panel1: TPanel
+    inherited Label6: TLabel
+      Width = 379
+      Caption = 'Cadastro de Pessoa Física'
+    end
+  end
+  inherited edtLogradouro: TEdit
+    Top = 319
+  end
+  inherited edtLocalidade: TEdit
+    Top = 367
+  end
+  inherited edtBairro: TEdit
+    Top = 367
+  end
+  inherited edtComplemento: TEdit
+    Top = 319
+  end
+  inherited edtUf: TEdit
+    Top = 367
+  end
+  inherited Label1: TLabel
+    Top = 303
+  end
+  inherited Label2: TLabel
+    Top = 351
+  end
+  inherited Label3: TLabel
+    Top = 351
+  end
+  inherited Label4: TLabel
+    Top = 303
+  end
+  inherited Label5: TLabel
+    Top = 351
+  end
+  inherited edtNumero: TEdit
+    Top = 319
+  end
+  inherited Label7: TLabel
+    Top = 304
+  end
+  inherited edtCep: TEdit
+    Top = 271
+  end
+  inherited Label8: TLabel
+    Top = 256
+  end
+  inherited Button1: TButton
+    Top = 271
+  end
+  object Edit1: TEdit[16]
+    Left = 32
+    Height = 23
+    Top = 128
+    Width = 208
+    TabOrder = 9
+  end
+  object Label9: TLabel[17]
+    Left = 32
+    Height = 15
+    Top = 112
+    Width = 33
+    Caption = 'Nome'
+    ParentColor = False
+  end
+  object Edit2: TEdit[18]
+    Left = 264
+    Height = 23
+    Top = 128
+    Width = 88
+    TabOrder = 10
+  end
+  object Label10: TLabel[19]
+    Left = 264
+    Height = 15
+    Top = 112
+    Width = 61
+    Caption = 'Estado Civil'
+    ParentColor = False
+  end
+  object Edit3: TEdit[20]
+    Left = 376
+    Height = 23
+    Top = 128
+    Width = 128
+    TabOrder = 11
+  end
+  object Label11: TLabel[21]
+    Left = 376
+    Height = 15
+    Top = 112
+    Width = 107
+    Caption = 'Data de Nascimento'
+    ParentColor = False
+  end
+  object Edit4: TEdit[22]
+    Left = 32
+    Height = 23
+    Top = 176
+    Width = 208
+    TabOrder = 12
+  end
+  object Label12: TLabel[23]
+    Left = 32
+    Height = 15
+    Top = 160
+    Width = 111
+    Caption = 'Local de Nascimento'
+    ParentColor = False
+  end
+  object Edit5: TEdit[24]
+    Left = 264
+    Height = 23
+    Top = 176
+    Width = 88
+    TabOrder = 13
+  end
+  object Label13: TLabel[25]
+    Left = 264
+    Height = 15
+    Top = 160
+    Width = 15
+    Caption = 'RG'
+    ParentColor = False
+  end
+  object Edit6: TEdit[26]
+    Left = 376
+    Height = 23
+    Top = 176
+    Width = 128
+    TabOrder = 14
+  end
+  object Label14: TLabel[27]
+    Left = 376
+    Height = 15
+    Top = 160
+    Width = 21
+    Caption = 'CPF'
+    ParentColor = False
+  end
+  object Edit7: TEdit[28]
+    Left = 32
+    Height = 23
+    Top = 224
+    Width = 96
+    TabOrder = 15
+  end
+  object Label15: TLabel[29]
+    Left = 32
+    Height = 15
+    Top = 208
+    Width = 44
+    Caption = 'Telefone'
+    ParentColor = False
+  end
+  object Edit8: TEdit[30]
+    Left = 144
+    Height = 23
+    Top = 224
+    Width = 96
+    TabOrder = 16
+  end
+  object Label16: TLabel[31]
+    Left = 144
+    Height = 15
+    Top = 208
+    Width = 37
+    Caption = 'Celular'
+    ParentColor = False
+  end
+  object Edit9: TEdit[32]
+    Left = 264
+    Height = 23
+    Top = 224
+    Width = 240
+    TabOrder = 17
+  end
+  object Label17: TLabel[33]
+    Left = 264
+    Height = 15
+    Top = 208
+    Width = 48
+    Caption = 'Profissão'
+    ParentColor = False
+  end
+  object Button2: TButton[34]
+    Left = 376
+    Height = 25
+    Top = 407
+    Width = 128
+    Caption = 'Cadastrar'
+    OnClick = Button2Click
+    TabOrder = 18
+  end
+end

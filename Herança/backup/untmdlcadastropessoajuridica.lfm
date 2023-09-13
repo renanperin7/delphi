@@ -1,0 +1,155 @@
+inherited FrmMdlCadastros2: TFrmMdlCadastros2
+  Height = 546
+  ClientHeight = 546
+  Position = poScreenCenter
+  inherited Panel1: TPanel
+    inherited Label6: TLabel
+      Width = 414
+      Caption = 'Cadastro de Pessoa Jurídica'
+    end
+  end
+  inherited edtLogradouro: TEdit
+    Top = 415
+  end
+  inherited edtLocalidade: TEdit
+    Top = 463
+  end
+  inherited edtBairro: TEdit
+    Top = 463
+  end
+  inherited edtComplemento: TEdit
+    Top = 415
+  end
+  inherited edtUf: TEdit
+    Top = 463
+  end
+  inherited Label1: TLabel
+    Top = 399
+  end
+  inherited Label2: TLabel
+    Top = 447
+  end
+  inherited Label3: TLabel
+    Top = 447
+  end
+  inherited Label4: TLabel
+    Top = 399
+  end
+  inherited Label5: TLabel
+    Top = 447
+  end
+  inherited edtNumero: TEdit
+    Top = 415
+  end
+  inherited Label7: TLabel
+    Top = 400
+  end
+  inherited edtCep: TEdit
+    Top = 367
+  end
+  inherited Label8: TLabel
+    Top = 352
+  end
+  inherited Button1: TButton
+    Top = 367
+  end
+  object Edit1: TEdit[16]
+    Left = 32
+    Height = 23
+    Top = 128
+    Width = 472
+    TabOrder = 9
+  end
+  object Label9: TLabel[17]
+    Left = 32
+    Height = 15
+    Top = 112
+    Width = 97
+    Caption = 'Nome Empresarial'
+    ParentColor = False
+  end
+  object Edit4: TEdit[18]
+    Left = 32
+    Height = 23
+    Top = 176
+    Width = 376
+    TabOrder = 10
+  end
+  object Label12: TLabel[19]
+    Left = 32
+    Height = 15
+    Top = 160
+    Width = 137
+    Caption = 'Título do estabelecimento'
+    ParentColor = False
+  end
+  object Edit7: TEdit[20]
+    Left = 32
+    Height = 23
+    Top = 224
+    Width = 472
+    TabOrder = 11
+  end
+  object Label15: TLabel[21]
+    Left = 32
+    Height = 15
+    Top = 208
+    Width = 279
+    Caption = 'Código e descrição da atividade econômica principal'
+    ParentColor = False
+  end
+  object Edit8: TEdit[22]
+    Left = 416
+    Height = 23
+    Top = 176
+    Width = 88
+    TabOrder = 12
+  end
+  object Label16: TLabel[23]
+    Left = 416
+    Height = 15
+    Top = 160
+    Width = 28
+    Caption = 'Porte'
+    ParentColor = False
+  end
+  object Edit9: TEdit[24]
+    Left = 32
+    Height = 23
+    Top = 272
+    Width = 472
+    TabOrder = 13
+  end
+  object Label17: TLabel[25]
+    Left = 32
+    Height = 15
+    Top = 256
+    Width = 310
+    Caption = 'Código e descrição das atividades econômicas secundárias'
+    ParentColor = False
+  end
+  object Edit10: TEdit[26]
+    Left = 32
+    Height = 23
+    Top = 320
+    Width = 472
+    TabOrder = 14
+  end
+  object Label18: TLabel[27]
+    Left = 32
+    Height = 15
+    Top = 304
+    Width = 207
+    Caption = 'Código e descrição da natureza jurídica'
+    ParentColor = False
+  end
+  object Button2: TButton[28]
+    Left = 376
+    Height = 25
+    Top = 504
+    Width = 128
+    Caption = 'Cadastrar'
+    OnClick = Button2Click
+    TabOrder = 15
+  end
+end

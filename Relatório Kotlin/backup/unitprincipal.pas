@@ -52,7 +52,7 @@ var
   Client: TFPHTTPClient;
   FS: TFileStream;
 begin
-  SaveDialog1.FileName := ExtractFileName(URL+ComboBox1.Text+CURL+MaskEdit1.Text+CCURL+MaskEdit2.Text);
+  SaveDialog1.FileName := ExtractFileName(ComboBox1.Text+MaskEdit1.Text+MaskEdit2.Text+'.pdf');
   if not SaveDialog1.Execute then
   begin
     Exit;

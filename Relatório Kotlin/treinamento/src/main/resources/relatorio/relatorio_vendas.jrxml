@@ -111,6 +111,11 @@
 	<detail>
 		<band height="20" splitType="Stretch">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle>
+				<reportElement key="" isPrintRepeatedValues="false" x="0" y="0" width="550" height="20" backcolor="#C4E9FF" uuid="6dc38397-2446-462f-94d2-fe533cfcdcfc">
+					<printWhenExpression><![CDATA[new Boolean((new Integer(($V{REPORT_COUNT}.intValue()) % (new Integer(2).intValue()))).equals(new Integer(0)))]]></printWhenExpression>
+				</reportElement>
+			</rectangle>
 			<textField>
 				<reportElement key="" mode="Transparent" x="0" y="0" width="80" height="20" uuid="1e54ade6-9877-40ae-b310-987e43c6d982">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5ddd2db-849b-4243-be5a-71e094c375e4"/>
@@ -193,7 +198,7 @@
 		</band>
 	</pageFooter>
 	<summary>
-		<band height="37" splitType="Stretch">
+		<band height="20" splitType="Stretch">
 			<staticText>
 				<reportElement x="0" y="0" width="80" height="20" uuid="f5c9ac6a-913e-4891-99b1-1b360ebb2197"/>
 				<box padding="3">
